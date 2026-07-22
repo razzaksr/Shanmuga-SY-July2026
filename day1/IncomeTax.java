@@ -1,0 +1,27 @@
+package day1;
+
+import java.util.Scanner;
+
+public class IncomeTax {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double salary = 0, tax = 0;
+        System.out.println("Income tax calculator");
+        System.out.println("Enter the Annual salary ");
+        salary = scan.nextDouble();
+        if(salary>=30.1){
+            tax = (salary*30)/100;
+        }else if(salary>15.0&&salary<=20.0){
+            tax = (salary*10)/100;
+        }else if(salary>20.1&&salary<=25.0){
+            tax = (salary*15)/100;
+        }else if(salary>25.0&&salary<=30.0){
+            tax = (salary*25)/100;
+        }else if(salary>12.0&&salary<=15.0){
+            tax = (salary*5)/100;
+        }else{
+            tax=0;
+        }
+        System.out.println(salary+" earnings need to pay "+tax);
+    }
+}
