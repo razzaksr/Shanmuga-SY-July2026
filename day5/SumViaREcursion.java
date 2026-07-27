@@ -1,0 +1,13 @@
+package day5;
+
+public class SumViaREcursion {
+    public static double findSum(double[] arr, int index){
+        if(index==0) return arr[index];
+        return arr[index]+findSum(arr, index-1);
+    }
+    public static void main(String[] args) {
+        double[] onRoad = {7.45,13.5,4.5,21.6};
+        double sum = findSum(onRoad, onRoad.length-1);// init
+        System.out.println(sum);
+    }
+}
