@@ -26,5 +26,6 @@ public class HappyNumber {
         Scanner scanner = new Scanner(System.in);
         int digit = scanner.nextInt();
         System.out.println(hNumber.isHappy(digit));
+        scanner.close();
     }
 }

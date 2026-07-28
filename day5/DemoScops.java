@@ -9,8 +9,8 @@ public class DemoScops {
         vinod.principle=100000;vinod.roi = 16.1;
         vinod.tenure = 48; //vinod.calculate();
         //razak.calculate();
-        System.out.println(vinod.emi);
-        System.out.println(razak.emi);
+        System.out.println(LoanCalculator.emi);// System.out.println(vinod.emi);
+        System.out.println(LoanCalculator.emi);// System.out.println(razak.emi);
     }
 }
 class LoanCalculator{
