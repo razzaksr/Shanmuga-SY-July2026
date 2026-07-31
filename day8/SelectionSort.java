@@ -27,7 +27,6 @@
 		public static void main(String[] arg){
 			Integer[] numbers = {25,35,38,67,5,6,16,19,0,-30,-10,6};
 			// inbuilt(numbers);
-			selection(numbers);
-			System.out.println(Arrays.toString(numbers));
+			selection(numbers);System.out.println(Arrays.toString(numbers));
 		}
 	}
