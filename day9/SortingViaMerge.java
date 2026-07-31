@@ -3,13 +3,10 @@
 	public class SortingViaMerge{
 		public static void order(int[] og, int start, int mid, int end){
 			int lSize = mid-start+1, rSize = end-mid;
-			int[] lArray = new  int[lSize];
-			int[] rArray = new int[rSize];
+			int[] lArray = new  int[lSize]; int[] rArray = new int[rSize];
 			int indL=0,indR=0,indOg=0;
-			for(indL=0;indL<lSize;indL++)
-				lArray[indL] = og[start+indL];
-			for(indR=0;indR<rSize;indR++)
-				rArray[indR] = og[indR+mid+1];
+			for(indL=0;indL<lSize;indL++) lArray[indL] = og[start+indL];
+			for(indR=0;indR<rSize;indR++) rArray[indR] = og[indR+mid+1];
 			indL=0; indR=0; indOg=start;
 			while(indL<lSize&&indR<rSize){
 				if(lArray[indL]>rArray[indR]) og[indOg] = rArray[indR++];
