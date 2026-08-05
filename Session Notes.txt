@@ -348,3 +348,56 @@ Tokens of java:
 					Limitations:
 						1. interface should have only one abstract method
 						2. cannot access data members if present unlike 								when we implements
+
+			Access Specifiers and Modifiers:
+				public		>> throughout all subfolders/packages of root
+				default	        >> can be accessed within package
+
+				final			>> final class cannot be inherited
+							     final methods can't be overridden
+							     final var/obj cannot be modified
+
+				abstract		>> abstract class cannot be instantiated
+							     abstract method need to override
+				static		>> static members can be accessed by ClassName
+				private		>> within a Class(eg: Encapsulation)
+				protected		>> can be accessed only via inheritance 
+
+
+			Exception Handling:
+
+			Error: 
+				Compile time error: logical, syntax
+				Runtime error: cannot be handled, mostly happens due to non 							coding parameters
+				eg:
+					Bank server down, even though UPI works good
+			Exception: code
+				condition/ statement which lead the program/app terminates 								abnormal/incomplete
+				it can be handled
+				eg:
+					Invalid UPI pin while transfer
+
+			Objective of handling:
+				1. let the code complete 
+				2. Provide another chance>>(catch block)
+
+			types:
+			1. Compile/ Checked Exception: while compile the code itself identify and 				handle
+			2. Runtime/ Unchecked Exception: while running the code only we can 				identify later we handle
+				eg:
+ 					NullPointerException
+					ArrayIndexOutOfBoundsException
+
+			How to handle:
+			1. try .... catch... finally
+			
+				try{
+					// statement possibly raise exception
+				}catch(ExceptionClass objext){
+					// handle giving another chance
+				}finally{
+					// executes irrespective exception occurred or not
+				}
+
+				if exception occurred in try >> catch>> finally
+				if exception not occurred in try>> finally
