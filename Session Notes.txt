@@ -1,0 +1,350 @@
+Programming:
+	C, C++, Python, Java, Java script, Typescript, PHP, C#
+
+	Software's:
+		data store
+		data operations: create, read, update, delete (CRUD)
+
+		automate hardware: smart vehicle connect, smart weight machine, smart watches
+		automate process: automate manual work, banking, health care, logistics, ecommerce, 
+
+
+
+Java Programming:
+	Java Development Kit: software enable us code and compile in java
+		Compile: high level language(file.java) into bytecode(ascii+uni>> 					file.class)
+		Java Runtime Environment: offering in built classes 7000+ components were classified/ grouped into packages according to their purpose
+			eg: java.io	>> Files, Input, Output
+				java.util>> advanced utility classes
+				java.sql>> database connectivity
+				javax.swing>> GUI
+			duplicate layer n top the physical OS, so that our java application not depend with OS anymore
+
+		Java Virtual Machine	>> Write once execute anywhere
+			1. in built memory like RAM
+			2. conversion of Bytecode into machine
+
+		Data types:
+		System
+		Scanner>> java util
+		Conditional statement
+
+execute java without vs code:
+	via commands:
+		javac Filename.java
+		java Filename
+
+
+Ternary:
+Control statements:
+	if>> if, if else, nested if, if else if ....... else
+	switch:
+		
+	switch					else if ladder
+	int, String,char				all formats
+	==						>= == != <=
+
+		
+	https://github.com/razzaksr/Shanmuga-SY-July2026
+
+
+	Regular Expression: regex
+		+		>> at least one occurrence
+		*		>> zero or one 
+		^		>> include/exclude
+		$		>> end of the string
+		?.		>> any set
+		{min,max} > length of the string between min and max 						range
+		[a-zA-Z]		>> only alphabets
+		[0-9]			>> only numbers
+
+Tokens of java:
+	identifier: user defined name with custom meaning
+	Classname
+	Objectname/ variables/ methods
+	package
+
+		rule:
+		do's   : cosmo, _cosmo, _7cosmo
+		dont's: 7cosmo, cos*&mo, cos mo, protected
+
+	keywords: 52 reserved words(inbuilt meaning)
+		eg: static, class, for, continue, default
+		cannot be used as identifier
+
+	comments:
+	// single line comment
+	/*
+		multi
+		line
+		comment
+	*/
+
+	data types:
+	short(2), int(4), long(8)
+	float(4), double(8),byte(1),char(2),boolean(4 bits)
+
+	literals:
+	String alpha = "Micorsoft";
+	double cosmo = 7.8;
+
+	Class:
+	Wrapper classes: Short, Integer, Long, Float, Double, Byte, 		Character, Boolean
+	Inbuilt classes
+	eg: 	Double cosmo = 7.8;
+	
+	Operators:
+	arithmetic		+-*/%
+	relational		> >= == < <= !=
+	logical		&&	||
+	Assignment	+= -= /= *=
+	unary		++ --
+	Bitwise		>> << ^ | & ~
+	
+	Separators: 
+		; , () {}
+
+
+	Bitwise Operators:
+	Type Conversion:
+		1. type casting:  using (type)
+			a. between data types, 
+			b. from Object to Other class(down casting)
+			c. from Other to Object class(Up casting)
+			
+		2. type parsing:
+			a. from String class to other types via Wrapper class parse function support
+
+
+
+	Bitwise problem statements:
+		leet code 415, 231, 342,
+
+	Loop Statements:
+		avoid statement redundancy 
+		repeat logic until condition true/false
+			init/ start
+			iter/ step up
+			cond/ end
+
+		while
+		do while
+		for
+		forEach
+
+		continue
+		break
+
+
+
+		Linear
+		Non linear
+		Multiple condition based
+
+		Leet code 12 >> Int To Roman
+		look for 1000's > M
+		look for 900	> CM
+		look for 500's	> D
+		look for 400's >> CD
+		look for 100's >> C
+		look for 90	>> XC
+		look for 50	>> L
+		look for 40	>> XL
+		look for 10	>> X
+		look for 9		>> IX
+		look for 5		>> V
+		look for 4		>> IV
+
+		loop1: outer loop>> init;cond;iter
+			// statement1
+			loop2: init;cond;iter
+				// statement2
+
+		Giant Wheel:
+			10 cabins>> loop1>> outer loop
+				4 person>> loop2>> nested loop
+
+			cabin1>> 
+			person1, person2, person3, person4
+			cabin2>>
+
+		Leet code 1342
+		Leet code 258
+
+
+		Patterns:
+		
+
+		Class: plain old java object:
+			contains the members relevant o use cases
+				eg:
+					Flipkart data members, member methods
+				to access members we require object/ authorize
+					
+			Members:
+				Class level 	>> variable/object/method inside the class 
+				can be accessible throughout class
+				eg:
+					Bank >> class
+						account >> object/member
+						debit_div	>> account
+						loan_div		>> accoutn
+						stock_div		>> acooutn
+					
+				
+				Local >> variable/object/method inside another method 
+					eg: Scanner object inside a main
+						variable
+
+				methods:
+			syntax:
+				returnType methiodName(arguments){
+					// specific logic
+				}
+				returnType/Arguments>> datatypes, Classes, Arrays
+	
+
+				data members
+				member methods
+					static:
+						requires object to call any non static members from 						static block
+						
+						static members are common across objects of class
+					non static:
+						no need object to use/call its own static and non 							static members
+
+						non static members are individual copy of each 							objects of class
+				
+
+		methods:
+		Arrays
+		
+		Leet code problems: 202, 507
+
+
+		Recursion:
+		using recursion find Prefix and postfix sum:
+		input: 12 5 21 6 43
+		postfix:  87 75 70 49 43
+		prefix: 12 17 38 44 87
+
+
+
+
+		Time complexity:
+		O(1)
+		O(logn)
+		O(n)
+		O(m.n)
+		O(nlogn)
+		O(n2)
+
+		Searching Sorting:
+			Linear
+			Binary
+			Selection
+			Bubble
+			Merge
+
+		Object Oriented Programming:
+			to ensure code/ application is reusable and secure
+			Class
+			Object
+			Encapsulation
+			Polymorphism
+			Inheritance
+			Abstraction
+		
+		Encapsulation:
+			data members are private(can't access outside of the class), even though try to 				access via authorised object
+			through public setters, getters
+						// getter
+		/*
+			public type getMemberName(){
+				return member;
+			}
+		*/
+				// setter
+		/*public void setMemberName(type value){
+			this.datamember = value;
+		}*/	
+
+		Constructor: is method with below properties
+			1. name same as ClassName
+			2. no returntype
+
+			features:
+				it called before any other method by users
+				eg: pin validation before choosing any withdraw, mini statement, balance check
+
+				used to initialize class members
+
+		Has a Relationship:
+			Composition of one object is member of another class
+
+		Polymorphism:
+			static poly/compile time/Overloading: overload by count, type and order of parameters
+				Constructors, methods
+				only within same class
+
+		Inheritance: Is A Relationship
+			extend the object reusability to another level
+			using one class's object we can access members of many class's only if they had "is a 							relationship"/ inheritance
+			
+			eg: Gmail>> super/ base/ parent class;
+				Gmail>> class
+					send, draft, ....
+				Youtube>> class is a relation with Gmail; Youtube is derived/ child class
+					playlist, upload,
+				Playstore>> class is a relation with Gmail; Playstore is derived/ child class
+					Download, share
+				Maps>> class is a relation with Gmail; Maps is derived/ child class
+					saved location, share, directions
+				
+				one Gmail account/object is enough to access other Apps/class
+				
+			apply inheritance:
+			1. extends >> is a relation>> DerivedClass extends BaseClass
+
+			types:
+				Single, multi level, hierarchy, hybrid, multiple
+			
+			Runtime/ Dynamic Polymorphism/ Overriding:
+			happens between class's those were involved in inheritance
+				writing base class's method again in derived class for 						writing own definition/ logic
+				eg: Transfer in Bank is not same Transfer in the Wallet, 				Transfer in the ATM and Transfer in the InternetBanking
+
+			Note: 
+				Non Abstract method: method with definition ({})
+				Abstract method: method without definition ({})
+
+				Overriding is not mandate on non-abstract method
+				Overriding is mandate on abstract method
+
+
+			Abstraction:
+				Hide the definition/ logic of the method/ abstract method
+				the following components in those write abstract methods
+				1. Abstract Class
+					cannot create object so access via inheritance
+					override when it has abstract method
+				Note: Abstract methods has to be overridden in their 						derived component
+
+				2. Interface:
+					just like class component with certain difference
+					it can't be instantiated
+					data members need to be initialized
+					DerivedClass implements Interface
+					data members in interface are final(can't modify)							only contains abstract methods eventually it has to be 							overridden by derived class
+
+				Functional Interface:
+					we can use lambda for interface which has 								only one abstract method
+
+					Advantage:
+						1. No need derived class
+						2. No need to override
+						3. Creating object directly
+
+					Limitations:
+						1. interface should have only one abstract method
+						2. cannot access data members if present unlike 								when we implements
