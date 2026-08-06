@@ -2,7 +2,7 @@
 	public class DemoHasA{
 		static Retrieve re=new Retrieve();
 		public static void main(String[] arr){
-			DemoHasA.re.read(10.1);
+			DemoHasA.re.read(10.1f);
 			// DemoHasA demo = new DemoHasA();
 			// demo.re.read(10.1f);
 		}

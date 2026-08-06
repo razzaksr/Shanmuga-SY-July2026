@@ -377,16 +377,23 @@ Tokens of java:
 				eg:
 					Invalid UPI pin while transfer
 
-			Objective of handling:
+			Objective of handling: enhance the customer experience by 
 				1. let the code complete 
 				2. Provide another chance>>(catch block)
 
 			types:
 			1. Compile/ Checked Exception: while compile the code itself identify and 				handle
+				eg: 
+					IOException>> java.io
+					InterruptedException
+					
 			2. Runtime/ Unchecked Exception: while running the code only we can 				identify later we handle
 				eg:
  					NullPointerException
 					ArrayIndexOutOfBoundsException
+					InputMismatchException>> java.util
+					NumberFormatException
+					ArithemeticException
 
 			How to handle:
 			1. try .... catch... finally
@@ -401,3 +408,25 @@ Tokens of java:
 
 				if exception occurred in try >> catch>> finally
 				if exception not occurred in try>> finally
+
+			2. throws>> keyword
+				simply handle the exception, no place to offer another chance/fixing mistake
+				mention "throws" at signature/beginning of the method
+
+			Approaches:
+				1. handling in the same try catch for 1 time
+				2. handling in the same try catch for fixed amount of times
+				3. handling in the same try catch for infinite number of times
+				4. handling in the caller/main try.. catch using "throw" keyword, since its used to 						forward exception from one block to another
+				5. handling multiple exceptions in single catch only if solutions for both is same
+				6. handling multiple exceptions in different catch block since each catch block 							offers different solution
+				7. handling exception inside another catch
+
+
+			Throwable>> interface
+				|
+			Exception
+				|
+			RuntimeException
+				|
+				InputMismatch, Arithemetric, ArrayIndex, UserDefinedException
