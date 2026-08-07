@@ -430,3 +430,54 @@ Tokens of java:
 			RuntimeException
 				|
 				InputMismatch, Arithemetric, ArrayIndex, UserDefinedException
+
+			String	>> Class
+				Immutable
+			methods
+				matches
+				toUpperCase
+				toLowerCase
+				charAt
+				length
+				equals
+				equalsIgnoreCase
+				compareTo
+				compareToIgnoreCase
+				substring
+				endsWith
+				startsWith
+				split
+				
+				getBytes
+				toCharArray
+				trim
+				contains
+				replace
+								
+			StringBuilder and StringBuffer >> storage can accept any format of data
+				finally it would return only as String
+
+
+
+	Collection Framework: java.util
+		Class's act as storage which capable to store specific type/ Generic, all types/non generic
+
+		dynamic size
+		working with Class not data type
+		its secure since storage is class can perform CRUD only via its respective methods
+		
+		Iterable		>> interface
+			|
+		Collection
+			|
+		List, Set, Map, Queue, Deque	>> interfaces
+
+		List: can accept duplicate objects>> eg: 12, 89,76, 12 
+			ArrayList/Vector, LinkedList, Stack
+						Collections
+		Set: update when duplicates arrives >> position based actions not available
+			HashSet, TreeSet, LinkedHashSet
+		Map:
+			HashMap, TreeMap, LinkedHashMap, Hashtable
+		Queue/ Deque:
+			LinkedList, ArrayQueue, PriorityQueue
