@@ -477,7 +477,13 @@ Tokens of java:
 						Collections
 		Set: update when duplicates arrives >> position based actions not available
 			HashSet, TreeSet, LinkedHashSet
+		Queue/ Deque:
+			LinkedList, ArrayDeque, PriorityQueue
 		Map:
 			HashMap, TreeMap, LinkedHashMap, Hashtable
-		Queue/ Deque:
-			LinkedList, ArrayQueue, PriorityQueue
+
+		Iterator, ListIterator
+		Comparator vs Comparable
+
+
+		
