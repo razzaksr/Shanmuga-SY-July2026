@@ -490,5 +490,28 @@ Tokens of java:
 
 
 		DSA
-			Bit Manipulation, Math
-		
+			Data structures:
+				How efficiently arrange the data in the storage
+				eg: matrix, circle arrangements in the lab and 					class rooms
+				Data structures: storage design
+				Algorithms: actions/ operations to be performed 					on the structures, these operations are 					measured/ analysed in terms of space and time
+				
+				Algorithm Analysis:
+				Omega
+				Theta
+				Big Oho
+					O(1), O(logn), O(n), O(nlogn), O(m.n),
+					O(n2)
+				
+				Types of structures:
+					primitive: 8 data types in java
+					non primitive:
+						Linear:
+							array(1D, 2D), 
+							LinkedList
+							Stack
+							Queue
+							Map
+						Non linear:
+							Tree
+							Graph
