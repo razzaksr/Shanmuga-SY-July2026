@@ -1,6 +1,6 @@
 package day2;
 
-public class JumpGame {
+public class JumpGameViaGreedy {
     public static boolean reach(int[] arr){
         int jump=0;
         for(int index=0;index<arr.length;index++){
