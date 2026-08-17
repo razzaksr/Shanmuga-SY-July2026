@@ -515,3 +515,25 @@ Tokens of java:
 						Non linear:
 							Tree
 							Graph
+
+
+
+Algorithms:
+	Two pointers
+	Greedy
+	Intervals
+	Divide and Conquer
+	Dynamic Programming:
+		split the problem in to sub units, solve those units eventually to reach final/ overall solution
+		
+	Initial solution will be there
+	
+Implementation :
+	Top Down/ Memorization/ Heap/ array:
+		using recursion and heap/array
+	Bottom UP/ Tabular(var/ array):
+		using few const var/ array via loops
+
+	
+
+
