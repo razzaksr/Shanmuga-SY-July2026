@@ -534,6 +534,18 @@ Implementation :
 	Bottom UP/ Tabular(var/ array):
 		using few const var/ array via loops
 
-	
 
+
+	Sliding Window algorithm:
+		at a time considering fixed/variable length of values in array 			and perform required action
+
+		end and start
+			when window is slides :
+				extends at the end/right
+				shrink at the start/left
+
+		types:
+			fixed window		>> using window size perform 								required action
+			variable window	>> find and return size of the 							window by performing required action
+	
 
