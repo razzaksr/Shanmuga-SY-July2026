@@ -549,3 +549,20 @@ Implementation :
 			variable window	>> find and return size of the 							window by performing required action
 	
 
+	
+	Stack:
+		Stack based problems discussion done day7
+
+
+	LinkedList: day8
+		Linked List structure overview
+		types:
+			Single Linked List
+			Doubly Linked List
+			Circle Linked List
+		Implementation of Linked List:
+			1. Collection framework
+			2. Using POJO >> Object oriented approach
+
+		Discussed LinkedList based leet code problems
+		
