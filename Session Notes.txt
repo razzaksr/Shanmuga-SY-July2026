@@ -566,3 +566,22 @@ Implementation :
 
 		Discussed LinkedList based leet code problems
 		
+
+
+	day9: 
+		Non linear data structures:
+		Tree, Graph
+		Tree: root and children, leaf
+			Node>> data, left and right pointers
+		
+			types:
+				Binary tree
+				Binary Search Tree (left <root<right)
+				Balanced BST/ AVL Tree
+
+			CRUD Operations:
+				Build tree
+				Read/ Traversal
+					InOrder, PreOrder,PostOrder
+					LevelOrder, ZigZag, Boundary 
+
