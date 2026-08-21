@@ -585,3 +585,18 @@ Implementation :
 					InOrder, PreOrder,PostOrder
 					LevelOrder, ZigZag, Boundary 
 
+
+
+		day10:
+			Graph:
+				Vertex and Edge
+				Applications such as skyscanner, delivery partner apps, booking apps
+
+				types:
+					weighted, unweighted
+					cyclic, acyclic
+					directed, undirected
+				
+				Traversals:
+					DFS, BFS
+

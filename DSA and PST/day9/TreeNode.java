@@ -1,8 +1,8 @@
 package day9;
 
 public class TreeNode {
-    int val;
-    TreeNode left,right;
+    public int val;
+    public TreeNode left,right;
     public TreeNode(int data){
         val = data;left=null;right=null;
     }
