@@ -600,3 +600,201 @@ Implementation :
 				Traversals:
 					DFS, BFS
 
+
+		Day11:
+			Graph: BFS, DFS related problems
+		Day12:
+			Cheapest flight
+
+			Input: n = 4, 
+			flights = 				[[0,1,100],
+			[1,2,100],[2,0,100],[1,3,600],[2,3,200]], 
+			src = 0, dst = 3, k = 1
+
+			dist=[0,max,max,max]
+
+			iterations: 0<=k(1)>> 0,1
+				iter=0:
+
+				dist=[0,max,max,max], 
+				temp=[0,max,max,max]
+					flight:[0,1,100]
+					cs=0, cd=1, cost=100
+					dist[0]!=max, 0+100<dist[1]
+						temp=[0,100,max,max]
+					
+					flight:[1,2,100]
+					dist=[0,max,max,max],
+					temp=[0,100,max,max]
+
+					cs=1, cd=2, cost=100
+					dist[1]>> false since its max in dist[1]
+					
+					flight:[2,0,100]
+					dist=[0,max,max,max],
+					temp=[0,100,max,max]
+					cs=2, cd=0, cost=100
+					dist[2]>> false since dist[2] is max
+
+					flight:[1,3,600]
+					dist=[0,max,max,max],
+					temp=[0,100,max,max]
+					cs=1, cd=3, cost=600
+					dist[1]>> false
+
+					flight:[2,3,200]
+					dist=[0,max,max,max],
+					temp=[0,100,max,max]
+					cs=2, cd=3, cost=200
+					dist[2]>> false
+
+					we have checked all flight for iter 0
+
+					dist=[0,100,max,max]
+
+				iter=1
+					dist=[0,100,max,max]
+					temp=[0,100,max,max]
+					flight:[0,1,100]
+					cs=0,cd=1,cost=100
+					dist[0], 0+100<temp[1]
+			
+					flight:[1,2,100]
+					cs=1,cd=2,cost=100
+					dist[1], 100+100<dist[2]
+					temp=[0,100,200,max]
+
+					flight:[2,0,100]
+					cs=2, cd=0, cost=100
+					dist[2]>> fails
+
+					flight:[1,3,600]
+					cs=1, cd=3, cost=600
+					dist[1],100+600 < temp[3]
+					temp=[0,100,200,700]
+
+					flight:[2,3,200]
+					cs=2, cd=3, cost=200
+					dist[2]>> fails
+
+				dist=temp>> dist=[0,100,200,700]
+
+
+
+				iterations are over>>
+			dist[3] !=max>> so 700
+					
+
+		Shortest Path algorithms:
+			Dijkstra	>> no traverse on negative weights
+						no negative cycle detection
+			Bellman-ford	>> allowed negative weights
+						detect negative cycle
+
+
+			Find judge:
+				n=3	
+				1-3
+				2-3
+				2-1
+			
+				in=[0,0,0,0]
+				out=[0,0,0,0]
+				
+				[1,3]
+				in=[0,0,0,1]
+				out=[0,1,0,0]
+				
+				[2,3]
+				in=[0,0,0,2]
+				out=[0,1,1,0]
+
+				[2,1]
+				in=[0,1,0,2]
+				out=[0,1,2,0]
+
+
+		Network delay:
+			[s,d,time]
+			times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, 				k = 2	
+
+			n+1>> 5
+
+			0->>{ [] }
+			1->{ [] }
+			2->{ [1,1] [3,1] }
+			3->{ [4,1] }
+			4->{ [] }
+
+			dist[max,max,0,max,max]		
+
+			([2,0])	pq
+
+			polled = (2,0)
+					node=2, time=0
+					dist[node] < time>> false
+				check for node adj
+					[1,1]>> d=1, wt=1
+				if dist[node]+wt<dist[d]
+				dist[max,1,0,max,max]	
+				
+				offer>> [1,1] to pq
+				([1,1])	>> pq
+
+					[3,1]>> d=3, wt=1
+				if dist[node]+wt<dist[d]
+				dist[max,1,0,1,max]	
+				offer>> [3,1] to pq
+
+				([1,1] [3,1])	>> pq
+
+			polled=[1,1]
+				node=1, time=1
+				dist[node] < time>> false
+				check for node adj
+
+			polled = [3,1]
+				node=3, time=1
+				dst[node] < time
+				check for node adj
+					[4,1]>> d=4, wt=1
+				if dist[node]+wt<dist[d]
+				dist[max,1,0,1,2]	
+				offer>> [4,2] to pq
+
+			([4,2])  >> pq
+
+			polled = [4,2]	
+				
+
+		3,4,1
+		2,3,2
+		2,1,4			k=3, n=4
+
+			0->{[]}
+			1->{[]}
+			2->{[3,2][1,4]}
+			3->{[4,1]}
+			4->{[]}
+
+			dist=[max,max,max,0,max]
+			
+			pq>> ([3,0])
+
+			polled=[3,0]
+				node=3, time=0
+				check dist[node]<time >> false
+				check node adj
+					[4,1]	>> d=4, wt=1
+					dist[node]+wt < dist[d]
+					dist=[max,max,max,0,1]
+				offer [4,1]>> to pq
+
+			pq>> ([4,1])
+			polled = 4,1
+				node 4, time=1
+				dist[node]<time >> false
+				
+													dist=[max,max,max,0,1]
+
+				-1
